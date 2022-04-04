@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Google;
+    src: url(../fonts/ProductSans-Regular.ttf);
+  }
+
 *{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Google;
 }
 
 body{
@@ -36,7 +41,6 @@ body{
 }
 
 .tittle {
-    font-weight: bold;
     display: block;
     padding-bottom: 10px;
     font-size: 1.2em;
