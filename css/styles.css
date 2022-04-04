@@ -132,4 +132,8 @@ body{
         border-right: 0px;
         padding-bottom: 15px;
     }
+
+    .icons {
+        padding-left: 0px;
+    }
 }
