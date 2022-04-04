@@ -1,0 +1,127 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo-maoli svg {
+    width: 300px;
+}
+
+.logo-maoli {
+    margin-left: -22px;
+}
+
+.frase {
+    padding: 15px;
+}
+
+.pregunta {
+    line-height: 1.4;
+    font-size: 1.4em;
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #00000026;
+}
+
+.tittle {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.boxes {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);    
+}
+
+.box {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 5px #0000002b;
+    line-height: 1.3;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+
+}
+
+.box:hover {
+    color: #ffeb3b;
+    background-color: black;
+    box-shadow: 0px 4px 10px #00000080;
+    transform: scale(1.15);
+    transition-duration: 0.5s;
+    z-index: 2;
+
+}
+
+.complemento {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    padding: 20px;
+    line-height: 1.4;
+    font-size: 0.85em;
+}
+
+.pregunta b {
+    background-color: #ffeb3b;
+    padding: 0 4px;
+}
+
+.colText {
+    border-right: 2px solid;
+}
+
+.icons img {
+    width: 32px !important;
+    margin: 0 5px;
+}
+
+.icons {
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px){
+    body{
+        background: url(../img/fondo-mobile.jpg);
+        background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    padding-bottom: 300px;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .complemento {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .colText {
+        text-align: center;
+        padding-right: 0px;
+        border-right: 0px;
+        padding-bottom: 15px;
+    }
+}
