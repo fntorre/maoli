@@ -8,9 +8,6 @@
 }
 
 body{
-    background: url(../img/fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-bottom: 100px;
 }
 
@@ -44,6 +41,10 @@ body::-webkit-scrollbar {
     padding: 15px;
 }
 
+.frase h1 {
+    font-size: 1.6em;
+}
+
 .pregunta {
     line-height: 1.4;
     font-size: 1.4em;
@@ -57,6 +58,7 @@ body::-webkit-scrollbar {
     display: block;
     padding-bottom: 10px;
     font-size: 1.2em;
+    color: #772ed0;
 }
 
 .boxes {
@@ -76,8 +78,6 @@ body::-webkit-scrollbar {
 }
 
 .box:hover {
-    color: #ffeb3b;
-    background-color: black;
     box-shadow: 0px 4px 10px #00000080;
     transform: scale(1.15);
     transition-duration: 0.5s;
@@ -88,19 +88,15 @@ body::-webkit-scrollbar {
 .complemento {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 2fr 4fr;
     padding: 20px;
     line-height: 1.4;
-    font-size: 0.85em;
+    max-width: 500px;
 }
 
 .pregunta b {
-    background-color: #ffeb3b;
-    padding: 0 4px;
-}
-
-.colText {
-    border-right: 2px solid;
+    background-color: #772ED0;
+    padding: 2px 7px;
+    color: white;
 }
 
 .icons img {
@@ -109,8 +105,8 @@ body::-webkit-scrollbar {
 }
 
 .icons {
-    padding-top: 5px;
-    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: -5px;
 }
 
 @media (max-width: 768px){
@@ -149,4 +145,17 @@ body::-webkit-scrollbar {
     .icons {
         padding-left: 0px;
     }
+
+    .frase h1 {
+        font-size: 1.3em;
+    }
+
+    .logo-maoli svg {
+        width: 240px;
+    }
+
+    .pregunta {
+        font-size: 1.2em;
+    }
+    
 }
