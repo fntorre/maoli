@@ -134,6 +134,7 @@ body::-webkit-scrollbar {
     .header {
         display: block;
         text-align: center;
+        padding-bottom: 0px;
     }
 
     .colText {
