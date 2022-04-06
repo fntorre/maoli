@@ -29,12 +29,15 @@ body::-webkit-scrollbar {
     margin: auto;
 }
 
-.logo-maoli svg {
-    width: 300px;
+.header {
+    padding-top: 20px;
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
-.logo-maoli {
-    margin-left: -22px;
+.logo-maoli svg {
+    width: 125px;
 }
 
 .frase {
@@ -55,10 +58,12 @@ body::-webkit-scrollbar {
 }
 
 .tittle {
-    display: block;
-    padding-bottom: 10px;
+    display: table;
+    padding: 2px 10px;
     font-size: 1.2em;
-    color: #772ed0;
+    background-color: #FFB5CE;
+    margin-left: -10px;
+    margin-bottom: 5px;
 }
 
 .boxes {
@@ -87,10 +92,11 @@ body::-webkit-scrollbar {
 
 .complemento {
     margin-top: 30px;
-    display: grid;
     padding: 20px;
     line-height: 1.4;
-    max-width: 500px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
 }
 
 .pregunta b {
@@ -100,22 +106,21 @@ body::-webkit-scrollbar {
 }
 
 .icons img {
-    width: 32px !important;
-    margin: 0 5px;
+    width: 42px !important;
+    margin: 0 10px;
 }
 
 .icons {
     padding-top: 20px;
-    margin-left: -5px;
+}
+
+.colText {
+    font-size: 1.15em;
 }
 
 @media (max-width: 768px){
     body{
-        background: url(../img/fondo-mobile.jpg);
-        background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     }
 
     .logo-maoli {
@@ -127,11 +132,7 @@ body::-webkit-scrollbar {
     }
 
     .header {
-        text-align: center;
-    }
-
-    .complemento {
-        grid-template-columns: 1fr;
+        display: block;
         text-align: center;
     }
 
@@ -151,11 +152,12 @@ body::-webkit-scrollbar {
     }
 
     .logo-maoli svg {
-        width: 240px;
+        width: 130px;
     }
 
     .pregunta {
         font-size: 1.2em;
+        text-align: center;
     }
     
 }
