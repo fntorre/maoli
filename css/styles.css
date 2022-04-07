@@ -9,6 +9,9 @@
 
 body{
     padding-bottom: 100px;
+    background-color: white;
+    transition-duration: 0.5s;
+
 }
 
 body::-webkit-scrollbar {
@@ -122,6 +125,7 @@ body::-webkit-scrollbar {
 body.dark{
     background-color: #2e2e2e;
     color: white;
+    transition-duration: 0.5s;
 }
 
 .dark .logo-maoli .st0 {
